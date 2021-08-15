@@ -1,4 +1,4 @@
-// This is an example of a "Callback Hell"
+// This is an example of a cleaner code using Javascript Promises
 
 let supplies = {
   filling : ["apple","banana","cherry","lemon"],
@@ -40,7 +40,7 @@ order(() => console.log(`${supplies.filling[2]} was chosen`), 2000)
   return order(() => console.log(`Placed ${supplies.form[1]} form in oven.`), 500);
 }) // Example Promise chain
 .then(() => {
-  return order(() => console.log(`Pie was cooked for 10 mins, taking out of oven.`), 1500);
+  return order(() => console.log(`Pie was baked for 10 mins, taking out of oven.`), 1500);
 }) // Example Promise chain
 .then(() => {
   return order(() => console.log(`Placing ${supplies.toppings[2]} on pie.`), 1500);

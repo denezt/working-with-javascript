@@ -30,7 +30,7 @@ let preparation = () => {
           setTimeout(() => {
             console.log(`Placed ${supplies.form[1]} form in oven.`);
             setTimeout(() => {
-              console.log(`Pie was cooked for 10 mins, taking out of oven.`);
+              console.log(`Pie was baked for 10 mins, taking out of oven.`);
               setTimeout(() => {
                 console.log(`Placing ${supplies.toppings[2]} on pie.`);
                 setTimeout(() => {
