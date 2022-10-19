@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Javascript Functions</title>
+  <script>
+    var myvar = "";
+    const pies = ["Apple", "Blackberry", "Cherry", "Banana"];
+    function myFunction(item, index) {
+    console.log("Running, myFunction");
+    index = index + 1;
+    myvar += index + ": " + item + " Pie<br />";
+    }
+    pies.forEach(myFunction);
+  </script>
+  </head>
+  <body>
+    <!-- Start HTML Example -->
+    <div id="pies">
+    <script>
+      document.getElementById("pies").innerHTML = myvar;
+    </script>
+    <!-- End HTML Example -->
+  </body>
+</html>
